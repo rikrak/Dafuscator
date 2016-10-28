@@ -161,6 +161,7 @@
     <Compile Include="Interfaces\Generators\ICountryGenerator.cs" />
     <Compile Include="Interfaces\Generators\IDateGenerator.cs" />
     <Compile Include="Interfaces\Generators\IEmailAddressGenerator.cs" />
+    <Compile Include="Interfaces\Generators\IEnglishTownGenerator.cs" />
     <Compile Include="Interfaces\Generators\IFirstNameGenerator.cs" />
     <Compile Include="Interfaces\Generators\IFullNameGenerator.cs" />
     <Compile Include="Interfaces\Generators\IGeneratorBuilder.cs" />

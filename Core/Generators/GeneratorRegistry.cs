@@ -11,6 +11,7 @@ namespace WaveTech.Dafuscator.Generators
 			For<IAddressGenerator>().Use<AddressGenerator>();
 			For<ICharacterGenerator>().Use<CharacterGenerator>();
 			For<ICityGenerator>().Use<CityGenerator>();
+			For<IEnglishTownGenerator>().Use<EnglishTownGenerator>();
 			For<ICompanyNameGenerator>().Use<CompanyNameGenerator>();
 			For<ICountryGenerator>().Use<CountryGenerator>();
 			For<IDateGenerator>().Use<DateGenerator>();
@@ -38,6 +39,7 @@ namespace WaveTech.Dafuscator.Generators
 			For<IGeneratorInfo>().Add<AddressGeneratorInfo>();
 			For<IGeneratorInfo>().Add<CharacterGeneratorInfo>();
 			For<IGeneratorInfo>().Add<CityGeneratorInfo>();
+			For<IGeneratorInfo>().Add<EnglishTownGeneratorInfo>();
 			For<IGeneratorInfo>().Add<CompanyNameGeneratorInfo>();
 			For<IGeneratorInfo>().Add<CountryGeneratorInfo>();
 			For<IGeneratorInfo>().Add<DateGeneratorInfo>();
@@ -95,6 +97,7 @@ namespace WaveTech.Dafuscator.Generators
 			For<IGeneratorBuilder>().Add<AddressGeneratorBuilder>();
 			For<IGeneratorBuilder>().Add<CharacterGeneratorBuilder>();
 			For<IGeneratorBuilder>().Add<CityGeneratorBuilder>();
+			For<IGeneratorBuilder>().Add<EnglishTownGeneratorBuilder>();
 			For<IGeneratorBuilder>().Add<CompanyNameGeneratorBuilder>();
 			For<IGeneratorBuilder>().Add<CountryGeneratorBuilder>();
 			For<IGeneratorBuilder>().Add<DateGeneratorBuilder>();
