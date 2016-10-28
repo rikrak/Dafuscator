@@ -9,9 +9,10 @@ namespace WaveTech.Dafuscator.Generators
 {
 	public class EnglishTownGeneratorInfo : IGeneratorInfo
 	{
-		public Guid Id
+	    internal static readonly Guid GeneratorId = new Guid("2FBC8A78-B7A3-45C8-B21B-EA2C92D9A870");
+        public Guid Id
 		{
-			get { return new Guid("2FBC8A78-B7A3-45C8-B21B-EA2C92D9A870"); }
+			get { return EnglishTownGeneratorInfo.GeneratorId; }
 		}
 
 		public string Name
@@ -43,7 +44,7 @@ namespace WaveTech.Dafuscator.Generators
 	{
 		public Guid GeneratorId
 		{
-			get { return new Guid("337ECBFD-DB3B-48BB-8516-BA7DEA7DEC45"); }
+			get { return EnglishTownGeneratorInfo.GeneratorId; }
 		}
 
 		public List<string> BuildGenerator(object generator, object[] data, HashSet<string> existingColumnData)
@@ -75,7 +76,7 @@ namespace WaveTech.Dafuscator.Generators
 			if (englishTownLines == null || englishTownLines.Count <= 0)
 			{
 				Assembly assembly = Assembly.GetExecutingAssembly();
-				englishTownLines = fileDataProvider.GetDataFromEmbededFile(assembly, "WaveTech.Dafuscator.Generators.Data.EnglishTown.txt");
+				englishTownLines = fileDataProvider.GetDataFromEmbededFile(assembly, "WaveTech.Dafuscator.Generators.Data.EnglishTowns.txt");
 			}
 
 			return englishTownLines;
