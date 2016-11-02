@@ -47,7 +47,7 @@ namespace DafuscatorBatch
 					connetionString = new ConnectionString(options.ConnectionString);
 				else
 					connetionString = db.ConnectionString;
-
+			    db.ConnectionString = connetionString;
 				eventAggregator.AddListener<StatusUpdateEvent>(e => Console.WriteLine(string.Format("{0}: {1}", DateTime.Now, e.Message)));
 
 				if (!String.IsNullOrEmpty(options.ExportFile))

@@ -114,7 +114,7 @@ namespace WaveTech.Dafuscator.Services
 							if (j == 0)
 								sql.Append(string.Format(" {0}", i));
 
-							sql.Append(string.Format(", '{0}'", activeColumnsNonClear[j].Data[i].Trim()));
+							sql.Append(string.Format(", '{0}'", activeColumnsNonClear[j].Data[i].Trim().Replace("'", "''")));
 						}
 						catch (Exception ex)
 						{
